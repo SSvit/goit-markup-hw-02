@@ -1,0 +1,25 @@
+body {
+    background-color: aqua;
+
+    font-family: Roboto, serif;
+}
+
+.logo {
+    font-family: Ralewey, sans-serif;
+    font-size: 26px;  
+    line-height: 1.2;    
+    color: #000000;
+}
+
+/* Site nav */
+
+.site nav {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+    
+        color: #2196F3;
+}
