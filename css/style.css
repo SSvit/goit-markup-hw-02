@@ -2,7 +2,6 @@
 /* Вторинний колір #757575*/
 /* Акцент 1 #2196F3*/
 /* Акцент 2 білий колір #ffffff*/
-
 :root {
     --primary-text-color: #212121;
     --title-text-color: #757575;
@@ -94,6 +93,7 @@ color: var(--accent-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
+    cursor: pointer;
     /* identical to box height, or 188% */
 }
 /* Секція 1 */
@@ -162,11 +162,25 @@ color: var(--accent-color);
 /* Портфоліо */
 
 /*Кнопки*/
-.button {
-    font-family: inherit;
+.button .button-secondary {
+    
     color: var(--primary-text-color);
     background-color: #F5F4FA;
-
+    font-family: inherit;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.6;    
+       
+    text-align: center;
+    cursor: pointer;
+}
+
+.button .button-primary {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    font-size: 16px;
+    line-height: 0.61;
+/* identical to box height, or 162% */
+
+text-align: center;
+cursor: pointer;
 }
