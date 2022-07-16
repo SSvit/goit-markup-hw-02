@@ -11,13 +11,17 @@
 
 body {
     color: var(--primary-text-color);
-    background-color:#E5E5E5;
+    background-color: #ffffff;
     font-family: Roboto, serif;   
     font-weight: 500;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
+.current {
+    color: var(--accent-color);
+}
 /* Логотип Web//Studio */
 .logo {
     font-family: Ralewey, sans-serif;
@@ -65,7 +69,7 @@ color: var(--accent-color);
 .tel {
     color: var(--title-text-color);
     font-size: 14px;
-    line-height: 0.87;
+    line-height: 1.14;
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
@@ -83,6 +87,8 @@ color: var(--accent-color);
         font-size: 44px;
         line-height: 1.36;
         /* or 136% */
+        line-height: 1.4;
+        letter-spacing: 0.06em;
         text-align: center;        
 }
 
@@ -96,6 +102,10 @@ color: var(--accent-color);
     cursor: pointer;
     /* identical to box height, or 188% */
 }
+.btn:hover {
+    color: #188CE8;
+}
+
 /* Секція 1 */
 .section-title {
     color: var(--primary-text-color);  
@@ -146,22 +156,34 @@ color: var(--accent-color);
 .nav {
     color: var(--primary-white-color);
     font-size: 14px;
-    line-height: 0.6;
+    line-height: 1.71;
         /* or 171% */           
 }
 
 .feature {
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
-    line-height: 0.6;
+    line-height: 1.71;
         /* or 171% */     
 }
 
+.footer-logo {
+    color: #ffffff;
+}
 
 
 /* Портфоліо */
 
 /*Кнопки*/
+.button .button-primary {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    font-size: 16px;
+    line-height: 1.62;
+    /* identical to box height, or 162% */
+    text-align: center;
+    cursor: pointer;
+}
 .button .button-secondary {
     
     color: var(--primary-text-color);
@@ -173,14 +195,26 @@ color: var(--accent-color);
     text-align: center;
     cursor: pointer;
 }
+.button .button-secondary:hover {
+    color: #188CE8;
+}
+.button .button-primary:hover {
+    color: #188CE8;
+}
 
-.button .button-primary {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
+.works-list .titles {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.06em;    
+}
+
+.works-list .texts {
+    color: var(--title-text-color);
+    font-weight: 400;
     font-size: 16px;
-    line-height: 0.61;
-/* identical to box height, or 162% */
-
-text-align: center;
-cursor: pointer;
+    line-height: 1.87;
+       /* identical to box height, or 188% */
 }
