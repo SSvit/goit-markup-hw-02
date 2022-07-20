@@ -1,8 +1,13 @@
-/* Основний колір #212121*/
-/* Вторинний колір #757575*/
-/* Акцент 1 #2196F3*/
-/* Акцент 2 білий колір #ffffff*/
+/* Основний колір #212121 */
+/* Вторинний колір #757575 */
+/* Акцент 1 #2196F3 */
+/* Акцент 2 білий колір #ffffff */
+/* Акцент 3 чорний колір #000000 */
+/* фон для хутера #188CE8 */
+/* фон для секції 4 */
 /* фон для футера #2F303A */
+/* фон секції портфоліо  #E5E5E5 */
+/* фон карток портфоліо #EEEEEE */
 :root {
     --primary-text-color: #212121;
     --title-text-color: #757575;
@@ -12,6 +17,8 @@
     --accent-hover-color: #188CE8; 
     --background-darker-than-white: #F5F4FA;
     --background-very-gray: #2F303A;
+    --background-portfolio: #E5E5E5;
+    --background-image-portfolio: #EEEEEE;
 }
 
 body {
@@ -27,7 +34,7 @@ body {
 
 /* Логотип -Studio- */
 .logo {
-    color: var(--accent-color);
+    color: var(--accent-black-color);
     font-family: Ralewey, sans-serif;   
     font-weight: 700;
     font-size: 26px;  
@@ -36,15 +43,15 @@ body {
     text-decoration: none;
 }
 /* Логотип -Web- */
-.logo-link {
-    color: var(--accent-black-color);
+.web {
+    color: var(--accent-color);
 }
 
 /* Ховер та фокус на весь логотип */
 .logo:hover,
 .logo:focus,
-.logo-link:hover,
-.logo-link:focus, 
+.web:hover,
+.web:focus, 
 .footer-logo:hover,
 .footer-logo:focus{
     color: var(--accent-hover-color);
@@ -63,14 +70,12 @@ body {
 /* Добавляє ховер i фокус в хедерi */
 .site-nav .link:hover,
 .site-nav .link:focus,
-.list-link:hover,
-.list-link:focus,
 .auth-nav .link:hover,
 .auth-nav .link:focus,
-.tooter-nav:hover,
-.tooter-nav:focus,
-.tooter-nav .link-nav:hover,
-.tooter-nav .link-nav:focus {
+.footer-nav .title:hover,
+.footer-nav .title:focus,
+.footer-nav .link-nav:hover,
+.footer-nav .link-nav:focus{
     color: var(--accent-color);
 }
 
@@ -168,6 +173,11 @@ body {
 
      /* Секція 4 */
 /* Стилiзацiя заголовку h3 */
+.section-image {
+    list-style: none;
+    background-color: var(--primary-white-color);
+}
+
 .work-list .title {
     color: var(--primary-text-color); 
     font-weight: 500;
@@ -186,24 +196,27 @@ body {
 }
 
      /* Футер */
+.footer-address {
+    font-style: normal;
+}
+
 /* Стилiзує слово Studio */
 .footer-logo {
     color: var(--primary-white-color);
+    text-decoration: none;
 }
 
 /* Стилiзує нaвiгацiю */
-.tooter-nav  {
+.footer-nav  {
     color: var(--primary-white-color);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    font-style: normal;
     text-decoration: none;    
 }
 
-.tooter-nav .link-nav {
-    color: rgba(255, 255, 255, 0.6);   
-    font-style: normal;
+.link-nav {
+    color: rgba(255, 255, 255, 0.6);    
     text-decoration: none;
 }
 
@@ -237,11 +250,17 @@ body {
 .button .btn-primary:focus{
     background-color: var(--accent-hover-color);
     color: var(--primary-white-color);
-
 }
 
 /* Другий список з зображеннями */
+
+.section-image-item {
+    list-style: none;
+    background-color: var(--background-image-portfolio);
+}
+
 .link {
+    font-style: normal;
     text-decoration: none;
 }
 
@@ -262,11 +281,15 @@ body {
 
 
 /* Фон для  секціi 4 */
-.works {
+.section-works {
     background: var(--background-darker-than-white);
 }
 
 /* Фон для і футера */
-.bg-layer {
+.footer {
     background: var(--background-very-gray);
+}
+/* Фон для секції портфоліо */
+.section-portfolio {
+    background-color: var(--background-portfolio);
 }
