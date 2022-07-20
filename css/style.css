@@ -27,10 +27,7 @@ body {
     font-family: Roboto, serif;      
 }
 
-/* Псевдоклас.Елемент рядка, який вiдображається в даний момент*/
-.current {
-    color: var(--accent-color);
-}
+
 
 /* Логотип -Studio- */
 .logo {
@@ -79,6 +76,10 @@ body {
     color: var(--accent-color);
 }
 
+/* Псевдоклас.Елемент рядка, який вiдображається в даний момент*/
+.site-nav .link.current {
+    color: var(--accent-color);
+}
 
 /* Пошта та телефон в хедері */
 .auth-nav .link {
