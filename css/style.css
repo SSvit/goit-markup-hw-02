@@ -50,6 +50,11 @@ img {
     margin: 0;
 }
 
+.list-item {
+    list-style: none;
+    text-decoration: none;
+}
+
 /* Головний контейнер */
 .container {
     width: 1200px;
@@ -83,8 +88,6 @@ img {
     line-height: 1.2;    
     letter-spacing: 0.03em;
     text-decoration: none;
-
-    background-color: greenyellow
 }
 
 /* Логотип -Web- */
@@ -100,10 +103,12 @@ img {
 /* Ховер та фокус на весь логотип */
 .logo:hover,
 .logo:focus,
-.web:hover,
-.web:focus,
+.logo-black:hover,
+.logo-black:focus,
 .footer-logo:hover,
-.footer-logo:focus {
+.footer-logo:focus,
+.logo-white:hover,
+.logo-white:focus {
     color: var(--accent-hover-color);
 }
 
@@ -115,7 +120,7 @@ img {
 }
 
 .site-nav .item {
-    background-color: greenyellow   
+      
 }
 
 .site-nav .item + .item {
@@ -165,8 +170,6 @@ img {
 .auth-nav .item-nav {  
     padding-top: 32px;
     padding-bottom: 32px;
-    
-    background-color: greenyellow
 }
 
 .item-nav .link {
@@ -198,8 +201,6 @@ img {
     letter-spacing: 0.06em;
     text-align: center;   
     text-transform: uppercase;
-
-    outline: 2px solid red;
 }
 
 /* Кнопка на сторiнцi Студiя*/
@@ -222,6 +223,11 @@ img {
     border: 0;
 }
 
+.page-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 /* Добавляє ховер i фокус лише для кнопки СТУДIЯ  */
 .btn:hover,
 .btn:focus {
@@ -241,11 +247,6 @@ img {
     white-space: nowrap;    
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
-}
-
-.page-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 /* Стилiзацiя заголовку h3 */
@@ -271,7 +272,6 @@ img {
 .feature-list {
     list-style: none;    
     display: flex;
-    padding-top: 96px;
     gap: 30px;
     align-items: center;
 }
@@ -340,13 +340,19 @@ img {
 }
 
      /* Футер */
+/* Стилiзує слово Studio */
+.footer {
+    height: 252px;
+}
 .footer-address {
     font-style: normal;
 }
 
-/* Стилiзує слово Studio */
 .footer-logo {
-    color: var(--primary-white-color);   
+    padding-left: 215px;
+    padding-bottom: 20px;
+       
+    color: var(--accent-color);
     font-family: Raleway, sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -362,6 +368,9 @@ img {
 
 /* Стилiзує нaвiгацiю */
 .footer-nav  {
+    padding-bottom: 60px;
+    padding-left: 215px;
+
     color: var(--primary-white-color);
     font-size: 14px;
     line-height: 1.71;
@@ -369,16 +378,21 @@ img {
     text-decoration: none;    
 }
 
+.footer-nav li {
+    padding-bottom: 9px;
+}
+
 .link-nav {
     color: rgba(255, 255, 255, 0.6);    
     text-decoration: none;
 }
 
-
 /* Портфоліо */
      /* Секція 1 */
 /* Кнопки */
 .button .btn-primary, .btn-secondary{
+    margin-left: 8px;
+
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     font-family: Roboto;
@@ -412,15 +426,16 @@ img {
     flex-wrap: wrap;
 }
 
-
-
-
 .link {
     font-style: normal;
     text-decoration: none;
 }
 
 .about-works .item {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 4px;
+
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -429,19 +444,23 @@ img {
 }
 
 .about-works .texts {
+    padding-left: 24px;
+    padding-right: 24px;
+    
+
     color: var(--title-text-color);   
     font-size: 16px;
     line-height: 1.87; 
     letter-spacing: 0.03em;
 }
 
-.section-image-item {
+.section-image-item {   
     width: 370px;
     margin-left: 15px;
     margin-right: 15px;
-    margin-bottom: 30px;
-    
-    background-color: var(--background-image-portfolio);
+    margin-top: 34px;  
+
+    background-color: var(--background-image-portfolio);  
 }
 
 .section-image-item:nth-child(3n) {
@@ -458,14 +477,18 @@ img {
 }
 /* Фон для секції 1  */
 .background {
+    margin: auto;
+    width: 1600px;
     background-color: var(--background-very-gray);
 }
 /* Фон для футера */
 .footer {
     background: var(--background-very-gray);
     padding: 60px 0;
+    margin: auto;
+    width: 1600px;
 }
 /* Фон для секції портфоліо */
 .portfolio {
-    background-color: var(--background-portfolio);
+   
 }
