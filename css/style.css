@@ -405,6 +405,9 @@ img {
     cursor: pointer;
     border-radius: 4px;
 }
+.button .btn-primary {
+    margin-left: 294px;
+}
 
 .button .btn-secondary {
     color: var(--primary-text-color);
