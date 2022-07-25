@@ -343,7 +343,9 @@ img {
      /* Футер */
 /* Стилiзує слово Studio */
 .footer {
-    height: 252px;
+   
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer-address {
     font-style: normal;
@@ -369,7 +371,6 @@ img {
 
 /* Стилiзує нaвiгацiю */
 .footer-nav  {
-    padding-bottom: 60px;
     padding-left: 215px;
 
     color: var(--primary-white-color);
