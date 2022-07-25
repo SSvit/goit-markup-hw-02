@@ -405,15 +405,15 @@ img {
     cursor: pointer;
     border-radius: 4px;
 }
-.button .btn-primary {
-    margin-left: 294px;
-}
 
 .button .btn-secondary {
     color: var(--primary-text-color);
     background-color: var(--background-darker-than-white);
 }
 
+.button {
+    justify-content: center;
+}
 /* Кнопки: ховер та фокус на сторiнцi Портфолiо*/
 .button .btn-secondary:hover, 
 .button .btn-secondary:focus,
@@ -435,8 +435,6 @@ img {
 }
 
 .about-works .item {
-    padding-left: 24px;
-    padding-right: 24px;
     padding-bottom: 4px;
 
     color: var(--primary-text-color);
@@ -446,11 +444,7 @@ img {
     letter-spacing: 0.06em; 
 }
 
-.about-works .texts {
-    padding-left: 24px;
-    padding-right: 24px;
-    
-
+.about-works .texts {   
     color: var(--title-text-color);   
     font-size: 16px;
     line-height: 1.87; 
@@ -462,8 +456,6 @@ img {
     margin-left: 15px;
     margin-right: 15px;
     margin-top: 34px;  
-
-    background-color: var(--background-image-portfolio);  
 }
 
 .section-image-item:nth-child(3n) {
@@ -472,6 +464,12 @@ img {
 
 .section-image-item:nth-last-child(-n+3) {
     margin-bottom: 0;
+}
+
+.portfolio-team-box {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: 0;
 }
 
 /* Фон для  секціi 4 */
@@ -492,6 +490,3 @@ img {
     width: 1600px;
 }
 /* Фон для секції портфоліо */
-.portfolio {
-   
-}
