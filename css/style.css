@@ -73,6 +73,7 @@ img {
 .header {
     border-bottom: 2px;
     border-color: #188CE8;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .logo {
