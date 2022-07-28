@@ -116,8 +116,8 @@ img {
 /* Хедер Site nav */
 .site-nav {
     display: flex;
-    margin-left: 50px;
-    gap: 30px;
+    /* margin-left: 50px; */
+    /* gap: 30px; */
 }
 
 
@@ -161,17 +161,22 @@ img {
     display: flex;
 }
 
-.auth-nav .item-nav + .item-nav {
+/* .auth-nav .item-nav + .item-nav { */
+.item-nav {
     margin-left: 50px;
 }
 
-.auth-nav .item-nav {  
+/* .auth-nav .item-nav {   */
+    /* padding-top: 32px; */
+    /* padding-bottom: 32px; */
+/* } */
+
+.auth-nav .link {
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
 .item-nav .link {
-
     color: var(--title-text-color);
 
     font-weight: 500;
@@ -192,6 +197,7 @@ img {
 }
 
 .hero-title {  
+    margin-bottom: 30px;
     color: var(--primary-white-color);  
     font-weight: 900;
     font-size: 44px;
@@ -249,6 +255,7 @@ img {
 
 /* Стилiзацiя заголовку h3 */
 .feature-list .title {
+    margin-bottom: 10px;
     color: var(--primary-text-color);
 
     font-weight: 700;
@@ -275,14 +282,18 @@ img {
 }
 
 .feature-list-item{
-    gap: 30px;
+    flex-basis: calc((100% - 3 * 30px) / 4);
 }
 
      /* Секція 3 */
 /* Стилiзацiя заголовку h2 (в 3 i 4 секцiях) */
+/* .section { */
+/* padding-bottom: ; */
+/* } */
+
 .section-title {
     margin-bottom: 50px;
-    
+       
     color: var(--primary-text-color);
 
     font-weight: 700;
@@ -292,10 +303,10 @@ img {
     letter-spacing: 0.03em;
 }
 
-.section-title .list {
-    gap: 30px;
+.section-list {    
     display: flex;
     margin: -15px;
+    /* gap: 30px; */
 }
 
 .list-image {
@@ -317,6 +328,7 @@ img {
 }
 
 .work-list .title {
+    margin-bottom: ;
     color: var(--primary-text-color); 
     font-weight: 500;
     font-size: 16px;
@@ -480,9 +492,9 @@ img {
     background: var(--background-darker-than-white);
 }
 /* Фон для секції 1  */
-.background {
-    margin: auto;
-    width: 1600px;
+.bg {
+    /* margin: auto; */
+    /* width: 1600px; */
     background-color: var(--background-very-gray);
 }
 /* Фон для футера */
@@ -490,6 +502,6 @@ img {
     background: var(--background-very-gray);
     padding: 60px 0;
     margin: auto;
-    width: 1600px;
+    /* width: 1600px; */
 }
 /* Фон для секції портфоліо */
